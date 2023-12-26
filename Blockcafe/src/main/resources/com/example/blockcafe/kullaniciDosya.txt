@@ -1,0 +1,9 @@
+özkan 123 true
+hacı hacı123 false
+emir 123456 false
+emre emre61 false
+ekinci 1 true
+şevval 5858 false
+emin 10 false
+mert 123 false
+ece 2 false

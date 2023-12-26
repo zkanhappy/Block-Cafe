@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@stil.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.blockcafe.girisMenu">
+   <children>
+      <Pane id="sign" layoutX="179.0" layoutY="78.0" prefHeight="444.0" prefWidth="640.0" stylesheets="@stil.css">
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.1473684161901474" green="0.12062378227710724" blue="0.12062378227710724" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <children>
+            <JFXButton fx:id="girisyap" layoutX="340.0" layoutY="302.0" onAction="#girisyap" prefHeight="59.0" prefWidth="134.0" ripplerFill="WHITE" style="-fx-background-radius: 50; -fx-background-color: #dfd1ad;" text="Giriş Yap" textFill="#794f25">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <PasswordField fx:id="sifre" layoutX="192.0" layoutY="231.0" prefHeight="35.0" prefWidth="255.0" promptText="Şifre">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </PasswordField>
+            <TextField fx:id="kullaniciadi" layoutX="192.0" layoutY="146.0" prefHeight="35.0" prefWidth="255.0" promptText="Kullanıcı Adı">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </TextField>
+            <Text fill="#dfd1ad" fontSmoothingType="LCD" layoutX="131.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Block Cafe" textAlignment="CENTER" wrappingWidth="376.5367431640625">
+               <font>
+                  <Font name="Gabriola" size="65.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="kayitekrani" layoutX="155.0" layoutY="302.0" onAction="#kayitEkrani" prefHeight="59.0" prefWidth="134.0" ripplerFill="#282625" style="-fx-background-color: #dfd1ad; -fx-background-radius: 50;" text="Kayıt Ol" textFill="#794f25">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="sonuc" alignment="CENTER" layoutX="57.0" layoutY="367.0" prefHeight="53.0" prefWidth="526.0" textAlignment="CENTER" textFill="#dfd1ad">
+               <font>
+                  <Font name="Calibri Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

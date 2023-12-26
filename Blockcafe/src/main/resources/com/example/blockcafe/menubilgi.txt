@@ -1,0 +1,10 @@
+Glace 14.5
+Latte 14.5
+Cappuccino 17
+Cocoa 14.5
+Mocha 14.5
+Espresso 17
+Macchiato 17
+Pasta 25
+Kurabiye 5
+Cheesecake 25

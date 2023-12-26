@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="sign" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@stil.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.blockcafe.afterLogin">
+   <children>
+      <Label fx:id="toplamtutar" alignment="CENTER" layoutX="554.0" layoutY="536.0" prefHeight="63.0" prefWidth="211.0" text="Toplam: 0.0₺ " textAlignment="CENTER" textFill="#ece9e9" visible="false">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+      </Label>
+      <JFXButton id="logo" fx:id="defButton" layoutX="14.0" layoutY="14.0" onAction="#defButton" prefHeight="100.0" prefWidth="100.0" stylesheets="@stil.css">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="menupotion" fx:id="menuGoster" alignment="CENTER_RIGHT" layoutX="157.0" layoutY="14.0" onAction="#menuGoster" prefHeight="100.0" prefWidth="225.0" ripplerFill="#282625" style="-fx-background-radius: 50; -fx-background-color: #dfd1ad;" stylesheets="@stil.css" text="Menü Göster" textFill="#794f25">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="calisan" fx:id="calisanGöster" alignment="CENTER_RIGHT" layoutX="441.0" layoutY="14.0" onAction="#calisangoster" prefHeight="100.0" prefWidth="225.0" ripplerFill="#282625" style="-fx-background-radius: 50; -fx-background-color: #dfd1ad;" stylesheets="@stil.css" text="Çalışanlar  " textFill="#794f25">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#dfd1ad" fontSmoothingType="LCD" layoutX="213.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Block Cafe" textAlignment="CENTER" wrappingWidth="574.936767578125">
+         <font>
+            <Font name="Gabriola" size="96.0" />
+         </font>
+      </Text>
+      <Pane fx:id="satinalpane" layoutX="44.0" layoutY="134.0" prefHeight="407.0" prefWidth="910.0" style="-fx-background-color: #f5eccf;" visible="false">
+         <children>
+            <JFXButton id="cash" fx:id="cash" layoutX="204.0" layoutY="71.0" onAction="#cashbutton" prefHeight="200.0" prefWidth="200.0" stylesheets="@stil.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="card" fx:id="card" layoutX="507.0" layoutY="71.0" onAction="#cardbutton" prefHeight="200.0" prefWidth="200.0" stylesheets="@stil.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <Text fill="#794f25" layoutX="304.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ödeme Türü Seçiniz" textAlignment="CENTER" wrappingWidth="302.936767578125">
+               <font>
+                  <Font name="Calibri Bold" size="34.0" />
+               </font>
+            </Text>
+            <Line endX="31.0" endY="206.20001220703125" layoutX="424.0" layoutY="73.0" startX="31.0" startY="20.999984741210938" />
+         </children></Pane>
+      <JFXButton id="emerald" fx:id="satisgöster" alignment="CENTER_RIGHT" layoutX="720.0" layoutY="14.0" onAction="#toplamsatis" prefHeight="100.0" prefWidth="225.0" ripplerFill="#282625" style="-fx-background-radius: 50; -fx-background-color: #dfd1ad;" stylesheets="@stil.css" text="Toplam Satış" textFill="#794f25">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Pane fx:id="menupane" cache="true" layoutX="44.0" layoutY="134.0" prefHeight="407.0" prefWidth="910.0" style="-fx-background-color: #f5eccf;" visible="false">
+         <children>
+            <Pane id="glace" layoutX="53.0" layoutY="44.0" prefHeight="100.0" prefWidth="100.0" stylesheets="@stil.css" />
+            <Pane id="latte" layoutX="228.0" layoutY="44.0" prefHeight="100.0" prefWidth="100.0" stylesheets="@stil.css" />
+            <Pane id="cappuccino" layoutX="405.0" layoutY="44.0" prefHeight="100.0" prefWidth="100.0" stylesheets="@stil.css" />
+            <Pane id="cocoa" layoutX="588.0" layoutY="44.0" prefHeight="100.0" prefWidth="100.0" stylesheets="@stil.css" />
+            <Pane id="mocha" layoutX="754.0" layoutY="44.0" prefHeight="100.0" prefWidth="100.0" stylesheets="@stil.css" />
+            <Pane id="espresso" layoutX="53.0" layoutY="235.0" prefHeight="100.0" prefWidth="100.0" stylesheets="@stil.css" />
+            <Pane id="cramel" layoutX="228.0" layoutY="235.0" prefHeight="100.0" prefWidth="100.0" stylesheets="@stil.css" />
+            <Pane id="menucake" layoutX="405.0" layoutY="235.0" prefHeight="100.0" prefWidth="100.0" stylesheets="@stil.css" />
+            <Pane id="cookie" layoutX="587.0" layoutY="235.0" prefHeight="100.0" prefWidth="100.0" stylesheets="@stil.css" />
+            <Pane id="pie" layoutX="754.0" layoutY="229.0" prefHeight="100.0" prefWidth="100.0" stylesheets="@stil.css" />
+            <JFXButton id="arti" fx:id="rb1" ellipsisString="" layoutX="119.0" layoutY="170.0" onAction="#rb1" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="eksi" fx:id="lb1" layoutX="61.0" layoutY="170.0" onAction="#lb1" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css" text="Button">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="arti" fx:id="rb2" ellipsisString="" layoutX="294.0" layoutY="170.0" onAction="#rb2" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="arti" fx:id="rb3" ellipsisString="" layoutX="470.0" layoutY="170.0" onAction="#rb3" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="arti" fx:id="rb4" ellipsisString="" layoutX="655.0" layoutY="168.0" onAction="#rb4" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="arti" fx:id="rb5" ellipsisString="" layoutX="821.0" layoutY="169.0" onAction="#rb5" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="arti" fx:id="rb6" ellipsisString="" layoutX="119.0" layoutY="363.0" onAction="#rb6" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="arti" fx:id="rb7" ellipsisString="" layoutX="294.0" layoutY="364.0" onAction="#rb7" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="arti" fx:id="rb8" ellipsisString="" layoutX="470.0" layoutY="364.0" onAction="#rb8" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css" text="Button">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="arti" fx:id="rb9" ellipsisString="" layoutX="654.0" layoutY="363.0" onAction="#rb9" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css" text="Button">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="arti" fx:id="rb10" ellipsisString="" layoutX="821.0" layoutY="364.0" onAction="#rb10" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css" text="Button">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="eksi" fx:id="lb2" layoutX="235.0" layoutY="170.0" onAction="#lb2" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css" text="Button">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="eksi" fx:id="lb3" layoutX="413.0" layoutY="170.0" onAction="#lb3" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css" text="Button">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="eksi" fx:id="lb4" layoutX="597.0" layoutY="168.0" onAction="#lb4" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css" text="Button">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="eksi" fx:id="lb5" layoutX="763.0" layoutY="170.0" onAction="#lb5" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css" text="Button">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="eksi" fx:id="lb6" layoutX="61.0" layoutY="363.0" onAction="#lb6" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css" text="Button">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="eksi" fx:id="lb7" layoutX="235.0" layoutY="363.0" onAction="#lb7" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css" text="Button">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="eksi" fx:id="lb8" layoutX="412.0" layoutY="363.0" onAction="#lb8" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css" text="Button">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="eksi" fx:id="lb9" layoutX="597.0" layoutY="363.0" onAction="#lb9" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css" text="Button">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="eksi" fx:id="lb10" layoutX="763.0" layoutY="364.0" onAction="#lb10" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css" text="Button">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="i1" alignment="CENTER" layoutX="21.0" layoutY="10.0" prefHeight="29.0" prefWidth="164.0" textAlignment="CENTER" textFill="#8e560d">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="i2" alignment="CENTER" layoutX="196.0" layoutY="10.0" prefHeight="29.0" prefWidth="164.0" textAlignment="CENTER" textFill="#8e560d">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="i3" alignment="CENTER" layoutX="371.0" layoutY="10.0" prefHeight="29.0" prefWidth="164.0" textAlignment="CENTER" textFill="#8e560d">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="i4" alignment="CENTER" layoutX="556.0" layoutY="10.0" prefHeight="29.0" prefWidth="164.0" textAlignment="CENTER" textFill="#8e560d">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="i5" alignment="CENTER" layoutX="722.0" layoutY="10.0" prefHeight="29.0" prefWidth="164.0" textAlignment="CENTER" textFill="#8e560d">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="i6" alignment="CENTER" layoutX="21.0" layoutY="204.0" prefHeight="29.0" prefWidth="164.0" textAlignment="CENTER" textFill="#8e560d">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="i7" alignment="CENTER" layoutX="196.0" layoutY="201.0" prefHeight="29.0" prefWidth="164.0" textAlignment="CENTER" textFill="#8e560d">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="i8" alignment="CENTER" layoutX="372.0" layoutY="204.0" prefHeight="29.0" prefWidth="164.0" textAlignment="CENTER" textFill="#8e560d">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="i9" alignment="CENTER" layoutX="555.0" layoutY="204.0" prefHeight="29.0" prefWidth="164.0" textAlignment="CENTER" textFill="#8e560d">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="t1" alignment="CENTER" layoutX="86.0" layoutY="169.0" prefHeight="29.0" prefWidth="34.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="t2" alignment="CENTER" layoutX="261.0" layoutY="169.0" prefHeight="29.0" prefWidth="34.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="t3" alignment="CENTER" layoutX="436.0" layoutY="169.0" prefHeight="29.0" prefWidth="34.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="t4" alignment="CENTER" layoutX="620.0" layoutY="167.0" prefHeight="29.0" prefWidth="34.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="t5" alignment="CENTER" layoutX="787.0" layoutY="169.0" prefHeight="29.0" prefWidth="34.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="t6" alignment="CENTER" layoutX="85.0" layoutY="362.0" prefHeight="29.0" prefWidth="34.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="t7" alignment="CENTER" layoutX="261.0" layoutY="362.0" prefHeight="29.0" prefWidth="34.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="t8" alignment="CENTER" layoutX="436.0" layoutY="362.0" prefHeight="29.0" prefWidth="34.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="t9" alignment="CENTER" layoutX="621.0" layoutY="362.0" prefHeight="29.0" prefWidth="34.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="t10" alignment="CENTER" layoutX="787.0" layoutY="362.0" prefHeight="29.0" prefWidth="34.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="f1" alignment="CENTER" layoutX="72.0" layoutY="144.0" prefHeight="30.0" prefWidth="59.0">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="f2" alignment="CENTER" layoutX="248.0" layoutY="144.0" prefHeight="30.0" prefWidth="59.0">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="f3" alignment="CENTER" layoutX="424.0" layoutY="144.0" prefHeight="30.0" prefWidth="59.0">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="f4" alignment="CENTER" layoutX="607.0" layoutY="144.0" prefHeight="30.0" prefWidth="59.0">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="f5" alignment="CENTER" layoutX="775.0" layoutY="144.0" prefHeight="30.0" prefWidth="59.0">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="f6" alignment="CENTER" layoutX="74.0" layoutY="336.0" prefHeight="30.0" prefWidth="59.0">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="f7" alignment="CENTER" layoutX="248.0" layoutY="336.0" prefHeight="30.0" prefWidth="59.0">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="f8" alignment="CENTER" layoutX="424.0" layoutY="334.0" prefHeight="30.0" prefWidth="59.0">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="f9" alignment="CENTER" layoutX="609.0" layoutY="336.0" prefHeight="30.0" prefWidth="59.0">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="f10" alignment="CENTER" layoutX="775.0" layoutY="336.0" prefHeight="30.0" prefWidth="59.0">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="i10" alignment="CENTER" layoutX="722.0" layoutY="204.0" prefHeight="29.0" prefWidth="164.0" textAlignment="CENTER" textFill="#8e560d">
+               <font>
+                  <Font name="Gabriola" size="23.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Label fx:id="menutext" alignment="CENTER" layoutX="238.0" layoutY="368.0" prefHeight="30.0" prefWidth="522.0" textAlignment="CENTER" textFill="#562d2d" visible="false">
+         <font>
+            <Font name="Calibri Bold" size="75.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="geribut" layoutX="400.0" layoutY="466.0" onAction="#gerigel" prefHeight="76.0" prefWidth="198.0" ripplerFill="#282625" style="-fx-background-color: #dfd1ad; -fx-background-radius: 50;" text="Çıkış" textFill="#794f25">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="satinal" alignment="CENTER" layoutX="760.0" layoutY="547.0" onAction="#satinal" prefHeight="41.0" prefWidth="164.0" ripplerFill="#282625" style="-fx-background-radius: 50; -fx-background-color: #3CC33C;" stylesheets="@stil.css" text="Satın Al" textFill="#f5eccf" visible="false">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Pane fx:id="toplamsatispane" layoutX="44.0" layoutY="134.0" prefHeight="407.0" prefWidth="910.0" style="-fx-background-color: #f5eccf;" visible="false">
+         <children>
+            <Text fill="#794f25" layoutX="163.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kullanıcı Adı" textAlignment="CENTER" wrappingWidth="132.5367431640625">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="#794f25" layoutX="389.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Satış Sayısı" textAlignment="CENTER" wrappingWidth="132.5367431640625">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="#794f25" layoutX="621.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Getiri" textAlignment="CENTER" wrappingWidth="132.5367431640625">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Text>
+            <JFXTextArea fx:id="scrolltext" editable="false" layoutX="149.0" layoutY="82.0" prefHeight="222.0" prefWidth="613.0">
+               <font>
+                  <Font name="Monospaced Bold" size="20.0" />
+               </font>
+            </JFXTextArea>
+            <Label fx:id="toplamgetiri" layoutX="320.0" layoutY="330.0" prefHeight="35.0" prefWidth="404.0" text="Toplam Getiri:" textFill="#794f25">
+               <font>
+                  <Font name="Calibri Bold" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="calisansatispane" layoutX="52.0" layoutY="206.0" prefHeight="186.0" prefWidth="910.0" style="-fx-background-color: #f5eccf;" visible="false">
+         <children>
+            <Text fill="#794f25" layoutX="163.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kullanıcı Adı" textAlignment="CENTER" wrappingWidth="132.5367431640625">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="#794f25" layoutX="389.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Satış Sayısı" textAlignment="CENTER" wrappingWidth="132.5367431640625">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="#794f25" layoutX="621.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Getiri" textAlignment="CENTER" wrappingWidth="132.5367431640625">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Text>
+            <Label fx:id="calisantoplamsatis" layoutX="168.0" layoutY="79.0" prefHeight="35.0" prefWidth="575.0">
+               <font>
+                  <Font name="Monospaced Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="calisanpane" layoutX="44.0" layoutY="134.0" prefHeight="407.0" prefWidth="910.0" style="-fx-background-color: #f5eccf;" visible="false">
+         <children>
+            <JFXTextArea fx:id="tumcalisan" editable="false" layoutX="149.0" layoutY="82.0" prefHeight="222.0" prefWidth="613.0">
+               <font>
+                  <Font name="Monospaced Bold" size="20.0" />
+               </font>
+            </JFXTextArea>
+            <JFXComboBox id="yazi" fx:id="choicebox" layoutX="679.0" layoutY="14.0" onAction="#select" prefHeight="35.0" prefWidth="211.0" promptText="Tüm Çalışanlar" stylesheets="@stil.css">
+               <effect>
+                  <Blend />
+               </effect>
+            </JFXComboBox>
+            <Text fx:id="text1" fill="#794f25" layoutX="142.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kullanıcı Adı" textAlignment="CENTER" wrappingWidth="132.5367431640625">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="text2" fill="#794f25" layoutX="322.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maaş" textAlignment="CENTER" wrappingWidth="132.5367431640625">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="text3" fill="#794f25" layoutX="483.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Satış Sayısı" textAlignment="CENTER" wrappingWidth="132.5367431640625">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="text4" fill="#794f25" layoutX="629.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kıdem" textAlignment="CENTER" wrappingWidth="132.5367431640625">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Text>
+            <Line fx:id="cizgi1" endX="72.60003662109375" endY="272.0" layoutX="257.0" layoutY="32.0" startX="72.60003662109375" startY="27.499984741210938" />
+            <Line fx:id="cizgi2" endX="72.60003662109375" endY="272.0" layoutX="410.0" layoutY="31.0" startX="72.60003662109375" startY="27.499984741210938" />
+            <Line fx:id="cizgi3" endX="72.60003662109375" endY="272.0" layoutX="568.0" layoutY="31.0" startX="72.60003662109375" startY="27.499984741210938" />
+            <Pane id="kimlik" fx:id="kimlikpane" layoutX="269.0" layoutY="76.0" prefHeight="315.0" prefWidth="613.0" stylesheets="@stil.css" visible="false">
+               <children>
+                  <Pane id="steve" fx:id="stevepane" layoutX="66.0" layoutY="94.0" prefHeight="100.0" prefWidth="100.0" stylesheets="@stil.css" />
+                  <Pane id="alex" fx:id="alexpane" layoutX="66.0" layoutY="94.0" prefHeight="100.0" prefWidth="100.0" stylesheets="@stil.css" />
+                  <Text fill="WHITE" layoutX="173.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kullanıcı Adı" wrappingWidth="86.19995117187477">
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="172.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maaş" wrappingWidth="86.19995117187477">
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="ss" fill="WHITE" layoutX="270.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Satış Sayısı" wrappingWidth="86.19995117187477">
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="270.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kıdem" textAlignment="CENTER" wrappingWidth="86.19995117187477">
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="tx1" layoutX="172.0" layoutY="118.0" prefHeight="17.0" prefWidth="86.0" text="Label" textFill="#f5eccf">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tx2" layoutX="173.0" layoutY="169.0" prefHeight="17.0" prefWidth="86.0" text="Label" textFill="#f5eccf">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tx4" alignment="CENTER" layoutX="270.0" layoutY="118.0" prefHeight="17.0" prefWidth="86.0" text="Label" textAlignment="CENTER" textFill="#f5eccf">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tx3" alignment="CENTER" layoutX="270.0" layoutY="169.0" prefHeight="17.0" prefWidth="86.0" textFill="#f5eccf">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="maasduzenle" alignment="CENTER" layoutY="238.0" onAction="#maasduzenle" prefHeight="63.0" prefWidth="200.0" ripplerFill="#282625" style="-fx-background-radius: 50; -fx-background-color: #D8D500;" stylesheets="@stil.css" text="Maaş Düzenle" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="kullanicisil" alignment="CENTER" layoutX="235.0" layoutY="238.0" onAction="#kullanicisil" prefHeight="63.0" prefWidth="200.0" ripplerFill="#282625" style="-fx-background-radius: 50; -fx-background-color: #C12007;" stylesheets="@stil.css" text="Kullanıcı Sil" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <TextField fx:id="tf1" editable="false" layoutX="457.0" layoutY="52.0" prefHeight="25.0" prefWidth="100.0" visible="false" />
+                  <Text fx:id="yenimaas" fill="#794f25" layoutX="457.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yeni Maaş" textAlignment="CENTER" visible="false" wrappingWidth="100.0">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <JFXButton id="onayla" fx:id="onaylabutton" ellipsisString="B" layoutX="468.0" layoutY="97.0" onAction="#onayla" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css" text="B" visible="false">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton id="vazgec" fx:id="vazgecbutton" ellipsisString="B" layoutX="521.0" layoutY="98.0" onAction="#vazgec" prefHeight="25.0" prefWidth="25.0" stylesheets="@stil.css" text="B" visible="false">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="sonuc1" alignment="CENTER" layoutX="404.0" layoutY="122.0" prefHeight="35.0" prefWidth="200.0" textAlignment="CENTER" textFill="#794f25">
+                     <font>
+                        <Font name="Calibri Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
